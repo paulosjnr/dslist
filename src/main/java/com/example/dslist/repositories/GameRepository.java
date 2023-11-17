@@ -1,5 +1,9 @@
 package com.example.dslist.repositories;
 
-public interface GameRepository {
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import com.example.dslist.entities.Game;
+
+public interface GameRepository extends JpaRepository<Game, Long>{
 
 }
